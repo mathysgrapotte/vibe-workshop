@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+to check the code, run the following steps:
+0. run `make setup`
+
+A. check that tests pass
+1. run `make test`, if fails run the following tasks until it succeeds.
+1.1 correct any mistakes 
+1.2 re-run `make test`
+
+1. run `make format`to first format your code
+2. run `make check`, if fails run the following tasks until it succeeds.
+2.1 correct any linting issues 
+2.2 re-run `make format`
+2.3 re-run `make check`

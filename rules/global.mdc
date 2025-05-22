@@ -1,0 +1,27 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+The coding style for this project is based on the following principles: 
+
+General guidelines:
+- Code should first be kept simple, i.e. using the least amount of lines.
+Which means that no function should be longer than 60 lines of code.
+- Code should be modular and each module should be decoupled as much as possible.
+Meaning, changing code in one module should not affect other modules.
+- Data objects should be declared at the smallers possible level of scope.
+- The assertion density of the code should average to a minimum of two assertions per function. 
+When an assertion fails, an explicit recovery action must be taken, e.g., by returning an error condition to the caller of the function that executes the failing assertion.
+- We should aim for performance, but never at the expense of simplicity.
+
+Error handling:
+- Code should fail noisily and as fast as possible.
+- Code should come with a standard error message system. 
+Error messages should be consistent.
+- We should maintaint error traces.
+- Error should be handled gracefully whenever possible, and rely on the high assert density of the code. 
+
+Linting and documentation:
+- Documentation should always be up to date following google python style guide docstrings.
+- Documentation should always include examples to make it easier for users to understand the code.
